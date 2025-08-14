@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shades — Landing Page</title>
+  <link rel="stylesheet" href="landing.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <!-- small logo svg -->
+        <svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="6" fill="#E6F0FA"></rect>
+          <path d="M6 7h12v2H6zM6 11h12v2H6zM6 15h7v2H6z" fill="#2c6fb7"></path>
+        </svg>
+        <span class="brand-name">Shades</span>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#">Free Landing Pages</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn-outline" href="#">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="overline">PRESENT YOUR SERVICE</p>
+          <h1>Make landing page<br /><strong>fast and easily.</strong></h1>
+          <p class="lead">Create custom landing pages with Shades that convert more visitors than any website—no coding required.</p>
+
+          <form class="subscribe-form" action="#" onsubmit="event.preventDefault(); alert('Subscribed!');">
+            <label for="email" class="visually-hidden">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required />
+            <button class="btn-primary" type="submit">Subscribe</button>
+          </form>
+
+          <p class="trust-note">Trusted by over 50,000+ customers</p>
+        </div>
+
+        <div class="hero-art">
+          <!-- placeholder illustration (you can replace with actual image or svg) -->
+          <svg width="420" height="300" viewBox="0 0 420 300" aria-hidden="true">
+            <rect x="0" y="0" width="420" height="300" rx="12" fill="#F3F8FF"></rect>
+            <g transform="translate(32,28)">
+              <rect x="0" y="0" width="210" height="160" rx="8" fill="#fff" stroke="#DCE8FF"></rect>
+              <rect x="10" y="16" width="60" height="12" rx="4" fill="#E9F3FF"></rect>
+              <rect x="10" y="40" width="170" height="8" rx="4" fill="#E9F3FF"></rect>
+              <rect x="10" y="60" width="150" height="8" rx="4" fill="#E9F3FF"></rect>
+              <rect x="10" y="84" width="120" height="8" rx="4" fill="#E9F3FF"></rect>
+            </g>
+            <g transform="translate(260,30)">
+              <rect x="0" y="0" width="120" height="120" rx="8" fill="#E6F6EA"></rect>
+              <path d="M18 70 L102 70 L60 28 Z" fill="#2DA34A"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="container features-grid">
+        <article class="feature">
+          <!-- pencil icon -->
+          <svg class="feat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.5-4.5L16.5 4.5 21.5 9.5 6 25 3 21z" fill="#2c6fb7"/></svg>
+          <h3>Easy to Use</h3>
+          <p>Editing and customizing landing pages is easy and fast.</p>
+        </article>
+
+        <article class="feature">
+          <!-- responsive icon -->
+          <svg class="feat-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" fill="#2c6fb7"/><rect x="7" y="8" width="10" height="2" fill="#fff"/></svg>
+          <h3>100% Responsive</h3>
+          <p>Landing pages are fully responsive and look great on every device.</p>
+        </article>
+
+        <article class="feature">
+          <!-- pages icon -->
+          <svg class="feat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l5 5v13H6z" fill="#2c6fb7"/></svg>
+          <h3>50+ New Pages</h3>
+          <p>Plenty of pre-built pages to jump-start your project.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Shades. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
